@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+:root {
+    --shark-gray: #1d2c2b;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "RobotoReg";
+    background-color: var(--shark-gray);
+    color: black;
+    min-height: 100%;
+    padding-bottom: 25rem;
+    box-sizing: inherit;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.profileHeaders {
+    font-family: 'robotoBold';
+    margin-bottom: .2rem;
+    font-size: 1.13rem;
+}
+
+.gridSection {
+    min-height: 100vh;
+    margin-top: 3rem;
+}
+
+.gridFeed {
+    min-height: 100vh;
+}
+
+.text-onehalfxl {
+    font-size: 1.3rem;
+}
+
+.placeholderImage {
+    width: 250px;
+    height: auto;
+}
+
+.postImage {
+    height: 150px;
+    width: auto;
+}
+
+.bold {
+    font-family: 'RobotoBold';
+}
+
+.xbutton {
+    padding-top: 4px;
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+/* Modal styling */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40rem;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .form-control {
+    width: 27rem;
+    padding: .3rem;
+    margin-right: 1rem;
+  }
+
+  .textarea-form {
+    height: 8rem;
+  }
+
+  .textarea-education {
+    height: 5.85rem;
+  }
+  
+  .blur {
+    filter: blur(5px);
+  }  
+
+
+/* Styling to keep footer on bottom and not compromise main content */
+@media screen and (max-width: 1024px )  {
+    body {
+        padding-bottom: 30rem;
+    }
+}
+
+@media screen and (max-width: 640px )  {
+    body {
+        padding-bottom: 50rem;
+    }
+}
+
+@media screen and (max-width: 1076px )  {
+    .form-control {
+        width: 25rem;
+      }
+}
+
+@media screen and (max-width: 575px) {
+    .form-control {
+        width: 22rem;
+      }
+}
+
+@media screen and (max-width: 411px) {
+    .form-control {
+        width: 15rem;
+      }
+}
+
+@media screen and (max-width: 334px) {
+    .form-control {
+        width: 10rem;
+      }
+}
+
+@media screen and (max-width: 253px) {
+    .form-control {
+        width: 5rem;
+      }
+}
+
+@media screen and (max-width: 270px )  {
+    body {
+        padding-bottom: 60rem;
+    }
+}
